@@ -1,0 +1,31 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile Guess the Flag icon",
+      "type": "process",
+      "command": "C:/msys64/ucrt64/bin/windres.exe",
+      "args": ["-i", "${workspaceFolder}/resource.rc", "-O", "coff", "-o", "${workspaceFolder}/.vscode/flag_icon.o"],
+      "options": { "cwd": "${workspaceFolder}", "env": { "PATH": "C:/msys64/ucrt64/bin;C:/Windows/System32;C:/Windows" } },
+      "problemMatcher": "$gcc"
+    },
+    {
+      "label": "Build Guess the Flag",
+      "type": "process",
+      "command": "C:/msys64/ucrt64/bin/g++.exe",
+      "args": [
+        "-std=c++17", "-O2", "-g", "-static", "-static-libgcc", "-static-libstdc++",
+        "-municode", "-mwindows", "${workspaceFolder}/main.cpp", "${workspaceFolder}/.vscode/flag_icon.o",
+        "-o", "${workspaceFolder}/GuessTheFlag.exe", "-lgdiplus", "-lgdi32", "-luser32", "-lbcrypt"
+      ],
+      "options": { "cwd": "${workspaceFolder}", "env": { "PATH": "C:/msys64/ucrt64/bin;C:/Windows/System32;C:/Windows" } },
+      "problemMatcher": "$gcc",
+      "dependsOn": "Compile Guess the Flag icon",
+      "dependsOrder": "sequence",
+      "group": { "kind": "build", "isDefault": true }
+    }
+  ]
+}
+
+
+

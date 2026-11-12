@@ -1,0 +1,195 @@
+AF|Afghanistan|assets/flags/af.png
+AL|Albania|assets/flags/al.png
+DZ|Algeria|assets/flags/dz.png
+AD|Andorra|assets/flags/ad.png
+AO|Angola|assets/flags/ao.png
+AG|Antigua and Barbuda|assets/flags/ag.png
+AR|Argentina|assets/flags/ar.png
+AM|Armenia|assets/flags/am.png
+AU|Australia|assets/flags/au.png
+AT|Austria|assets/flags/at.png
+AZ|Azerbaijan|assets/flags/az.png
+BS|Bahamas|assets/flags/bs.png
+BH|Bahrain|assets/flags/bh.png
+BD|Bangladesh|assets/flags/bd.png
+BB|Barbados|assets/flags/bb.png
+BY|Belarus|assets/flags/by.png
+BE|Belgium|assets/flags/be.png
+BZ|Belize|assets/flags/bz.png
+BJ|Benin|assets/flags/bj.png
+BT|Bhutan|assets/flags/bt.png
+BO|Bolivia|assets/flags/bo.png
+BA|Bosnia and Herzegovina|assets/flags/ba.png
+BW|Botswana|assets/flags/bw.png
+BR|Brazil|assets/flags/br.png
+BN|Brunei|assets/flags/bn.png
+BG|Bulgaria|assets/flags/bg.png
+BF|Burkina Faso|assets/flags/bf.png
+BI|Burundi|assets/flags/bi.png
+KH|Cambodia|assets/flags/kh.png
+CM|Cameroon|assets/flags/cm.png
+CA|Canada|assets/flags/ca.png
+CV|Cape Verde|assets/flags/cv.png
+CF|Central African Republic|assets/flags/cf.png
+TD|Chad|assets/flags/td.png
+CL|Chile|assets/flags/cl.png
+CN|China|assets/flags/cn.png
+CO|Colombia|assets/flags/co.png
+KM|Comoros|assets/flags/km.png
+CG|Congo|assets/flags/cg.png
+CR|Costa Rica|assets/flags/cr.png
+HR|Croatia|assets/flags/hr.png
+CU|Cuba|assets/flags/cu.png
+CY|Cyprus|assets/flags/cy.png
+CZ|Czechia|assets/flags/cz.png
+DK|Denmark|assets/flags/dk.png
+DJ|Djibouti|assets/flags/dj.png
+DM|Dominica|assets/flags/dm.png
+DO|Dominican Republic|assets/flags/do.png
+CD|DR Congo|assets/flags/cd.png
+EC|Ecuador|assets/flags/ec.png
+EG|Egypt|assets/flags/eg.png
+SV|El Salvador|assets/flags/sv.png
+GQ|Equatorial Guinea|assets/flags/gq.png
+ER|Eritrea|assets/flags/er.png
+EE|Estonia|assets/flags/ee.png
+SZ|Eswatini|assets/flags/sz.png
+ET|Ethiopia|assets/flags/et.png
+FJ|Fiji|assets/flags/fj.png
+FI|Finland|assets/flags/fi.png
+FR|France|assets/flags/fr.png
+GA|Gabon|assets/flags/ga.png
+GM|Gambia|assets/flags/gm.png
+GE|Georgia|assets/flags/ge.png
+DE|Germany|assets/flags/de.png
+GH|Ghana|assets/flags/gh.png
+GR|Greece|assets/flags/gr.png
+GD|Grenada|assets/flags/gd.png
+GT|Guatemala|assets/flags/gt.png
+GN|Guinea|assets/flags/gn.png
+GW|Guinea-Bissau|assets/flags/gw.png
+GY|Guyana|assets/flags/gy.png
+HT|Haiti|assets/flags/ht.png
+HN|Honduras|assets/flags/hn.png
+HU|Hungary|assets/flags/hu.png
+IS|Iceland|assets/flags/is.png
+IN|India|assets/flags/in.png
+ID|Indonesia|assets/flags/id.png
+IR|Iran|assets/flags/ir.png
+IQ|Iraq|assets/flags/iq.png
+IE|Ireland|assets/flags/ie.png
+IL|Israel|assets/flags/il.png
+IT|Italy|assets/flags/it.png
+CI|Ivory Coast|assets/flags/ci.png
+JM|Jamaica|assets/flags/jm.png
+JP|Japan|assets/flags/jp.png
+JO|Jordan|assets/flags/jo.png
+KZ|Kazakhstan|assets/flags/kz.png
+KE|Kenya|assets/flags/ke.png
+KI|Kiribati|assets/flags/ki.png
+KW|Kuwait|assets/flags/kw.png
+KG|Kyrgyzstan|assets/flags/kg.png
+LA|Laos|assets/flags/la.png
+LV|Latvia|assets/flags/lv.png
+LB|Lebanon|assets/flags/lb.png
+LS|Lesotho|assets/flags/ls.png
+LR|Liberia|assets/flags/lr.png
+LY|Libya|assets/flags/ly.png
+LI|Liechtenstein|assets/flags/li.png
+LT|Lithuania|assets/flags/lt.png
+LU|Luxembourg|assets/flags/lu.png
+MG|Madagascar|assets/flags/mg.png
+MW|Malawi|assets/flags/mw.png
+MY|Malaysia|assets/flags/my.png
+MV|Maldives|assets/flags/mv.png
+ML|Mali|assets/flags/ml.png
+MT|Malta|assets/flags/mt.png
+MH|Marshall Islands|assets/flags/mh.png
+MR|Mauritania|assets/flags/mr.png
+MU|Mauritius|assets/flags/mu.png
+MX|Mexico|assets/flags/mx.png
+FM|Micronesia|assets/flags/fm.png
+MD|Moldova|assets/flags/md.png
+MC|Monaco|assets/flags/mc.png
+MN|Mongolia|assets/flags/mn.png
+ME|Montenegro|assets/flags/me.png
+MA|Morocco|assets/flags/ma.png
+MZ|Mozambique|assets/flags/mz.png
+MM|Myanmar|assets/flags/mm.png
+NA|Namibia|assets/flags/na.png
+NR|Nauru|assets/flags/nr.png
+NP|Nepal|assets/flags/np.png
+NL|Netherlands|assets/flags/nl.png
+NZ|New Zealand|assets/flags/nz.png
+NI|Nicaragua|assets/flags/ni.png
+NE|Niger|assets/flags/ne.png
+NG|Nigeria|assets/flags/ng.png
+KP|North Korea|assets/flags/kp.png
+MK|North Macedonia|assets/flags/mk.png
+NO|Norway|assets/flags/no.png
+OM|Oman|assets/flags/om.png
+PK|Pakistan|assets/flags/pk.png
+PW|Palau|assets/flags/pw.png
+PS|Palestine|assets/flags/ps.png
+PA|Panama|assets/flags/pa.png
+PG|Papua New Guinea|assets/flags/pg.png
+PY|Paraguay|assets/flags/py.png
+PE|Peru|assets/flags/pe.png
+PH|Philippines|assets/flags/ph.png
+PL|Poland|assets/flags/pl.png
+PT|Portugal|assets/flags/pt.png
+QA|Qatar|assets/flags/qa.png
+RO|Romania|assets/flags/ro.png
+RU|Russia|assets/flags/ru.png
+RW|Rwanda|assets/flags/rw.png
+KN|Saint Kitts and Nevis|assets/flags/kn.png
+LC|Saint Lucia|assets/flags/lc.png
+VC|Saint Vincent and the Grenadines|assets/flags/vc.png
+WS|Samoa|assets/flags/ws.png
+SM|San Marino|assets/flags/sm.png
+ST|São Tomé and Príncipe|assets/flags/st.png
+SA|Saudi Arabia|assets/flags/sa.png
+SN|Senegal|assets/flags/sn.png
+RS|Serbia|assets/flags/rs.png
+SC|Seychelles|assets/flags/sc.png
+SL|Sierra Leone|assets/flags/sl.png
+SG|Singapore|assets/flags/sg.png
+SK|Slovakia|assets/flags/sk.png
+SI|Slovenia|assets/flags/si.png
+SB|Solomon Islands|assets/flags/sb.png
+SO|Somalia|assets/flags/so.png
+ZA|South Africa|assets/flags/za.png
+KR|South Korea|assets/flags/kr.png
+SS|South Sudan|assets/flags/ss.png
+ES|Spain|assets/flags/es.png
+LK|Sri Lanka|assets/flags/lk.png
+SD|Sudan|assets/flags/sd.png
+SR|Suriname|assets/flags/sr.png
+SE|Sweden|assets/flags/se.png
+CH|Switzerland|assets/flags/ch.png
+SY|Syria|assets/flags/sy.png
+TJ|Tajikistan|assets/flags/tj.png
+TZ|Tanzania|assets/flags/tz.png
+TH|Thailand|assets/flags/th.png
+TL|Timor-Leste|assets/flags/tl.png
+TG|Togo|assets/flags/tg.png
+TO|Tonga|assets/flags/to.png
+TT|Trinidad and Tobago|assets/flags/tt.png
+TN|Tunisia|assets/flags/tn.png
+TR|Türkiye|assets/flags/tr.png
+TM|Turkmenistan|assets/flags/tm.png
+TV|Tuvalu|assets/flags/tv.png
+UG|Uganda|assets/flags/ug.png
+UA|Ukraine|assets/flags/ua.png
+AE|United Arab Emirates|assets/flags/ae.png
+GB|United Kingdom|assets/flags/gb.png
+US|United States|assets/flags/us.png
+UY|Uruguay|assets/flags/uy.png
+UZ|Uzbekistan|assets/flags/uz.png
+VU|Vanuatu|assets/flags/vu.png
+VA|Vatican City|assets/flags/va.png
+VE|Venezuela|assets/flags/ve.png
+VN|Vietnam|assets/flags/vn.png
+YE|Yemen|assets/flags/ye.png
+ZM|Zambia|assets/flags/zm.png
+ZW|Zimbabwe|assets/flags/zw.png
