@@ -1,10 +1,10 @@
-# Find the Flag — Field Notes
+# Guess the Flag - Field Notes
 
 A graphical Windows C++ flag quiz with a warm, dark atlas interface and genuine flag images loaded from the local asset manifest.
 
 ## Run
 
-Double-click `FindTheFlag.exe`. Keep the adjacent `assets` folder with the executable; the game locates assets relative to its own path, so it can be launched from another working directory. If the manifest is missing, fewer than ten images load, or entries are invalid, the game reports the issue or skips affected entries safely.
+Double-click `GuessTheFlag.exe`. Keep the adjacent `assets` folder with the executable; the game locates assets relative to its own path, so it can be launched from another working directory. If the manifest is missing, fewer than ten images load, or entries are invalid, the game reports the issue or skips affected entries safely.
 
 ## Accounts, scores, and leaderboards
 
@@ -37,7 +37,7 @@ Open this folder in VS Code. Use **Ctrl+Shift+B** to build, **F5** to build and 
 
 ```powershell
 windres -i resource.rc -O coff -o icon.o
-g++ -std=c++17 -O2 -g -static -static-libgcc -static-libstdc++ -municode -mwindows main.cpp icon.o -o FindTheFlag.exe -lgdiplus -lgdi32 -luser32 -lbcrypt
+g++ -std=c++17 -O2 -g -static -static-libgcc -static-libstdc++ -municode -mwindows main.cpp icon.o -o GuessTheFlag.exe -lgdiplus -lgdi32 -luser32 -lbcrypt
 ```
 
 The compiler is `C:\msys64\ucrt64\bin\g++.exe`. The executable links the GCC C++ runtime statically and embeds its custom flag icon. **Distribute the `assets` folder beside the executable**; flag PNGs load at runtime and are not embedded.

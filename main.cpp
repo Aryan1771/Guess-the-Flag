@@ -537,7 +537,7 @@ void drawLeaderboard(Graphics& g){
  const std::array<std::wstring,5> labels{{L"STANDARD",L"ENDLESS",L"5 MIN",L"2 MIN",L"1 MIN"}};
  for(size_t i=0;i<labels.size();i++){const bool active=(i==0&&selectedMode==GameMode::Standard)||(i==1&&selectedMode==GameMode::Endless)||(i==2&&selectedMode==GameMode::Timed&&timeLimitSeconds==300)||(i==3&&selectedMode==GameMode::Timed&&timeLimitSeconds==120)||(i==4&&selectedMode==GameMode::Timed&&timeLimitSeconds==60);const Box& b=leaderboardModeBoxes[i];rounded(g,active?ACCENT:PANEL,b.x,b.y,b.w,b.h,10);outline(g,active?ACCENT:LINE,b.x,b.y,b.w,b.h,10,1);txt(g,labels[i],b.x,b.y,b.w,b.h,12,active?PANEL:ACCENT,true,1);}
  rounded(g,PANEL,70,255,980,370,18);txt(g,L"PLAYER",110,274,520,28,12,MUTED,true);txt(g,L"PERSONAL BEST",720,274,280,28,12,MUTED,true,2);
- for(size_t i=0;i<10;i++){const int y=313+static_cast<int>(i)*29;if(i<boardRows.size()){const bool me=canonicalName(boardRows[i].user)==canonicalName(playerName);if(me)rounded(g,Color(255,55,77,64),95,y,930,27,7);txt(g,L"#"+std::to_wstring(i+1)+L"     "+boardRows[i].user,110,y,650,27,14,me?ACCENT:UI_TEXT,true);txt(g,std::to_wstring(boardRows[i].score),720,y,280,27,14,me?ACCENT:UI_TEXT,true,2);}else{txt(g,L"—",110,y,650,27,13,MUTED);txt(g,L"—",720,y,280,27,13,MUTED,true,2);}}
+ for(size_t i=0;i<10;i++){const int y=313+static_cast<int>(i)*29;if(i<boardRows.size()){const bool me=canonicalName(boardRows[i].user)==canonicalName(playerName);if(me)rounded(g,Color(255,55,77,64),95,y,930,27,7);txt(g,L"#"+std::to_wstring(i+1)+L"     "+boardRows[i].user,110,y,650,27,14,me?ACCENT:UI_TEXT,true);txt(g,std::to_wstring(boardRows[i].score),720,y,280,27,14,me?ACCENT:UI_TEXT,true,2);}else{txt(g,L"-",110,y,650,27,13,MUTED);txt(g,L"-",720,y,280,27,13,MUTED,true,2);}}
  if(selectedMode==GameMode::Endless)txt(g,L"ENDLESS WORLD BOARD  ·  LOCAL PLAYERS ONLY FOR NOW",95,606,930,24,10,ACCENT,true,1);
  rounded(g,PANEL2,backBtn.x,backBtn.y,backBtn.w,backBtn.h,12);outline(g,LINE,backBtn.x,backBtn.y,backBtn.w,backBtn.h,12,1);txt(g,(previousScreen==Screen::Result||previousScreen==Screen::GameOver)?L"BACK TO RESULTS":L"BACK TO MAIN MENU",backBtn.x,backBtn.y,backBtn.w,backBtn.h,12,ACCENT,true,1);
 }
@@ -556,7 +556,7 @@ void drawGame(Graphics& g){
  flag(g,rounds[roundNo],370,188,380,218);
  txt(g,L"CHOOSE A COUNTRY",55,462,400,22,12,MUTED,true);
  for(size_t i=0;i<ANSWER_COUNT;i++){Box b=optionBoxes[i]; Color fill=PANEL;Color edge=LINE; if(locked&&choices[i]==rounds[roundNo]){fill=Color(255, 43, 82, 61);edge=GREEN;}else if(locked&&selected==static_cast<int>(i)){fill=Color(255, 91, 53, 47);edge=RED;}else if(hover==static_cast<int>(i)){fill=Color(255, 59, 72, 60);edge=ACCENT;}rounded(g,fill,b.x,b.y,b.w,b.h,13);outline(g,edge,b.x,b.y,b.w,b.h,13,1.3f);wstring label=std::to_wstring(i+1)+L"     "+countries[static_cast<size_t>(choices[i])].name;txt(g,label,b.x+18,b.y,b.w-36,b.h,17,UI_TEXT,true);}
- if(locked){const bool good=selected>=0&&static_cast<size_t>(selected)<choices.size()&&choices[static_cast<size_t>(selected)]==rounds[static_cast<size_t>(roundNo)]; txt(g,good?answerFeedback:(wstring(L"Almost — this is the flag of ")+countries[static_cast<size_t>(rounds[static_cast<size_t>(roundNo)])].name+L"."),55,625,650,28,14,good?GREEN:RED,true);rounded(g,ACCENT,nextBtn.x,nextBtn.y,nextBtn.w,nextBtn.h,13);const wchar_t* nextText=(selectedMode==GameMode::Standard&&static_cast<size_t>(roundNo+1)==ROUND_COUNT)?L"SEE YOUR RESULTS   →":L"NEXT FLAG   →";txt(g,nextText,nextBtn.x,nextBtn.y,nextBtn.w,nextBtn.h,14,PANEL,true,1);}
+ if(locked){const bool good=selected>=0&&static_cast<size_t>(selected)<choices.size()&&choices[static_cast<size_t>(selected)]==rounds[static_cast<size_t>(roundNo)]; txt(g,good?answerFeedback:(wstring(L"Almost - this is the flag of ")+countries[static_cast<size_t>(rounds[static_cast<size_t>(roundNo)])].name+L"."),55,625,650,28,14,good?GREEN:RED,true);rounded(g,ACCENT,nextBtn.x,nextBtn.y,nextBtn.w,nextBtn.h,13);const wchar_t* nextText=(selectedMode==GameMode::Standard&&static_cast<size_t>(roundNo+1)==ROUND_COUNT)?L"SEE YOUR RESULTS   →":L"NEXT FLAG   →";txt(g,nextText,nextBtn.x,nextBtn.y,nextBtn.w,nextBtn.h,14,PANEL,true,1);}
  else txt(g,L"Click an answer, or press 1, 2, 3 or 4.",55,625,500,25,12,MUTED,true);
  txt(g,L"SCORE  "+std::to_wstring(score),790,615,270,24,13,ACCENT,true,2);
  txt(g,L"BEST  "+std::to_wstring(highScore)+L"     STREAK  "+std::to_wstring(streak)+L"×",790,642,270,22,11,MUTED,true,2);
@@ -631,7 +631,7 @@ void choose(int i){
   lastAward=static_cast<int>((100+speedBonus)*multiplier);score+=lastAward;
   const int multiplierQuarters=std::min(12,4+streak-1);const wchar_t* fraction=multiplierQuarters%4==0?L"00":multiplierQuarters%4==1?L"25":multiplierQuarters%4==2?L"50":L"75";
   answerFeedback=L"Correct! +"+std::to_wstring(lastAward)+L" points  ·  streak x"+std::to_wstring(multiplierQuarters/4)+L"."+fraction;
- }else{streak=0;lastAward=0;answerFeedback=L"Not quite — your streak starts fresh next round.";if(selectedMode==GameMode::Endless)++mistakes;}
+ }else{streak=0;lastAward=0;answerFeedback=L"Not quite - your streak starts fresh next round.";if(selectedMode==GameMode::Endless)++mistakes;}
  if(selectedMode==GameMode::Endless&&mistakes>=5){finishRun(true);return;}
  lastScore=score;highScore=std::max(highScore,score);saveProfile();
  InvalidateRect(hwnd,nullptr,FALSE);SetTimer(hwnd,1,450,FALSE);
@@ -812,10 +812,10 @@ int WINAPI wWinMain(HINSTANCE inst,HINSTANCE,LPWSTR,int show){
   return 1;
  }
  if(!loadCountries()){
-  MessageBoxW(nullptr,loadError.c_str(),L"Guess the Flag — Asset Error",MB_OK|MB_ICONERROR);
+  MessageBoxW(nullptr,loadError.c_str(),L"Guess the Flag - Asset Error",MB_OK|MB_ICONERROR);
   countries.clear();GdiplusShutdown(gdip);gdip=0;return 1;
  }
- if(!loadWarnings.empty())MessageBoxW(nullptr,loadWarnings.c_str(),L"Guess the Flag — Some Assets Skipped",MB_OK|MB_ICONWARNING);
+ if(!loadWarnings.empty())MessageBoxW(nullptr,loadWarnings.c_str(),L"Guess the Flag - Some Assets Skipped",MB_OK|MB_ICONWARNING);
  loadAccounts();
  WNDCLASSW wc{};wc.lpfnWndProc=proc;wc.hInstance=inst;wc.lpszClassName=L"GuessTheFlagWindow";wc.hCursor=LoadCursorW(nullptr,IDC_ARROW);wc.hbrBackground=nullptr;
  wc.hIcon=static_cast<HICON>(LoadImageW(inst,MAKEINTRESOURCEW(IDI_APP),IMAGE_ICON,32,32,LR_DEFAULTCOLOR));
@@ -827,7 +827,7 @@ int WINAPI wWinMain(HINSTANCE inst,HINSTANCE,LPWSTR,int show){
   countries.clear();GdiplusShutdown(gdip);gdip=0;return 1;
  }
  RECT r{0,0,W,H};AdjustWindowRect(&r,WS_OVERLAPPED|WS_CAPTION|WS_SYSMENU|WS_MINIMIZEBOX,FALSE);
- hwnd=CreateWindowExW(0,wc.lpszClassName,L"Guess the Flag — Field Notes",WS_OVERLAPPED|WS_CAPTION|WS_SYSMENU|WS_MINIMIZEBOX,CW_USEDEFAULT,CW_USEDEFAULT,r.right-r.left,r.bottom-r.top,nullptr,nullptr,inst,nullptr);
+ hwnd=CreateWindowExW(0,wc.lpszClassName,L"Guess the Flag",WS_OVERLAPPED|WS_CAPTION|WS_SYSMENU|WS_MINIMIZEBOX,CW_USEDEFAULT,CW_USEDEFAULT,r.right-r.left,r.bottom-r.top,nullptr,nullptr,inst,nullptr);
  if(!hwnd){
   MessageBoxW(nullptr,L"The game window could not be created.",L"Guess the Flag",MB_OK|MB_ICONERROR);
   countries.clear();GdiplusShutdown(gdip);gdip=0;return 1;
